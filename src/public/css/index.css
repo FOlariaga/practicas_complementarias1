@@ -1,0 +1,15 @@
+.main-div {
+    background-color: #f60;
+    padding: 1em;
+}
+
+.carts{
+display: flex;
+flex-wrap: wrap; 
+gap: 1rem;
+}
+
+.cartProduct {
+    background-color: rgb(177, 126, 61);
+    padding: 10px;
+}
