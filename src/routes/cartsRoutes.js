@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     }
 })
 
-router.post("/", uploader.single('thumbnail'), async (req, res) => {
+router.post("/", async (req, res) => {
     try {
     } catch (error) {
     }

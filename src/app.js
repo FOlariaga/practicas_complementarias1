@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import initSocket from "./sockets.js";
 import viewsRoutes from "./routes/viewsRoutes.js";
 import productsRoutes from "./routes/productsRoutes.js";
+import cartsRoutes from "./routes/cartsRoutes.js";
 import handlebars from "express-handlebars";
 
 const app = express()
@@ -26,6 +27,7 @@ const httpServer = app.listen(config.PORT, async () => {
     
     app.use("/", viewsRoutes)
     app.use("/api/products", productsRoutes)
+    app.use("/api/carts", cartsRoutes)
     
     console.log(`app iniciada en el puerto ${config.PORT} con acceso a BD`)
 })
